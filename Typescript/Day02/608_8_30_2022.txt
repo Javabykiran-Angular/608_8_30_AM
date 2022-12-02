@@ -1,0 +1,23 @@
+Last Lecture
+1 Introduction of Module
+
+Today Lecture
+1 Environmental Setup
+2 Difference Between Angular js Vs Angular 2+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
