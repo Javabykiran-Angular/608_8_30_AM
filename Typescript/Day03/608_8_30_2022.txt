@@ -1,0 +1,36 @@
+Last Lecture
+1 Environmental Setup
+	1 node js 
+	2 vscode
+	3 typescript
+2 Difference Between Angular js Vs Angular 2+
+	- it is js based freamwork vs typescript based freamwork
+	- mvc arch. vs MVW arch 
+	- memory is not optimize & meromey leakage more vs memory is  optimize & meromey leakage less
+	- speed & performance is less vs speed & performance is more
+	- mobile community is not support vs mobile community is  support
+	
+
+Today Lecture
+1 Why Angular?
+	
+2 SPA
+3 What is Typescript
+4 Advantage & disadvntage of typescript 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
