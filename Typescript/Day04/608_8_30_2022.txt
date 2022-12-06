@@ -1,0 +1,46 @@
+Last Lecture
+1 Why Angular?	
+	- it give module,declarative template,sevices,end to end tooling,services..
+	- one freamwork to all 
+	- it has more speed & performance 
+	- it is universal freamwork
+	- mvw arch 
+	- code splitting 
+	- equall role for testing & writing 
+	- it is in build angular cli 
+	
+2 SPA
+	- 1 head & 1 body 
+	- spa env. create 
+3 What is Typescript
+	- superset of js 
+	- typescript= ecma standard + ecma version (js)+additional features 
+4 Advantage & disadvntage of typescript 
+	1 strong static typing 
+	2 compile time errors 
+	3 it support OOPS concept
+	
+	disadvntage
+	1 browser does not understand 
+		tsc => transcompile ur .ts file to .js file 
+	2 compilation time is more 
+
+Today Lecture
+1 vscode overview
+2 simple program in typescript
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
