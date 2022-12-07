@@ -1,0 +1,36 @@
+Last Lecture
+1 vscode overview
+	
+2 simple program in typescript
+	demo1.ts
+		console.log("Hello world");
+		console.log('Hello world');
+		console.log(`
+				Hello world`);
+		
+		tsc demo1.ts & node demo1.js
+		
+		
+		
+		
+Today Lecture
+1 variable
+3 data types 
+4 type assertion
+5 Operators
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
