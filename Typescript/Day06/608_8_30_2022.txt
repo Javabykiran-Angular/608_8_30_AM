@@ -1,0 +1,58 @@
+Last Lecture
+1 variable
+	var a1,a2;
+	var a$2;
+	
+3 data types 
+	number (int,long,float,double),string(''/""),boolean(true/false),
+	any(number,string,boolean),void,null,undefined
+	
+	var a1:number=10;
+	console.log("value of a1 "+a1)
+	var a2!:string;
+	default vakue of variable=> undefined
+	var a2;
+	 - default data type is any
+	 var a3=2.5;
+	 var a:any;
+	 a=2.5;
+	 a='sumit';
+	 a=true;
+	
+	
+4 type assertion
+	any/object/unknown
+	var a:any;
+	//1 angle
+	//as syntax
+	
+	var temp=(<string> a);
+	
+	var temp=(a as string )
+	
+5 Operators	
+	airthmathic,unary,ternary,logical,bitwise,assignment
+	===(strongly euqlailty => it compare value as well as data type)
+	== => it checks only value 	
+	
+Today Lecture
+1 Contorl statement
+2 Loop Statement 
+3 diff between var vs let vs const
+4 Functions 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
