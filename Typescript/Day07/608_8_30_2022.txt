@@ -1,0 +1,79 @@
+Last Lecture
+1 Contorl statement
+	- if,if-else ,switch,break,continue
+	if(a<4){
+	...
+	}
+	
+	switch(choice){
+	case 1....
+	default: 
+	}
+2 Loop Statement 
+	for ,while,do-while,foreach 
+	while(count!=0){
+	....
+	count--;
+	}
+	do{
+		...
+		count--;
+	}while(count!=0);
+	
+	for(let i=0;i<4;i++){
+	....
+	}
+	...
+	
+3 diff between var vs let vs const
+	var => it is global scope
+	let => within nearest block 
+	const pi=3.14;
+	scope => global as well as local 
+4 Functions 
+	1 Functions without parameter & without return type
+		function add1(){
+		...
+		}
+		add1();
+	2 Functions with parameter & without return type
+		function add1(a:number,b:number){
+		.....
+		}
+		add1(2,3)
+	3 Functions without parameter & with return type
+		function add3():number {
+			return (8+8)
+		}
+		
+		let res=add3()
+		.....
+	4 Functions with parameter & with return type
+		function add4(a:number,b:number):number{
+			return (a+b)
+		}
+		
+		let res=add4(5,4);
+		
+
+Today Lecture
+1 Anonymous function
+2 Fat arrow function
+3 Optional parameter function
+4 default parameter function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
