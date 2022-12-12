@@ -1,0 +1,70 @@
+Last Lecture
+1 Anonymous function
+	- function does not haeve any name 
+	let temp=function (){
+	....
+	}
+	temp();
+	
+	let temp2=function (a:number,b:number):number{
+		return (a+b)
+	}
+	
+	
+	let res=temp2(2,3);
+	
+2 Fat arrow function
+	let temp3=()=>{
+	.......
+	}
+	
+	temp3();
+	
+	let temp4=(a:number,b:number):number=>{
+		return (a+b);
+	}
+	
+	let res=temp4(2,3);
+	
+3 Optional parameter function
+		function add1(a?:number,b?:number){
+		....
+		}
+		
+		add1(2);
+		add1(2,5)
+	
+4 default parameter function
+	function add2(a:number,b:number=2){
+	....
+	}
+	
+	add2(4,7)
+	
+	function add2(a:number=8,b?:number){
+	....
+	}
+
+Today Lecture
+1 Array basics
+2 Array Methods
+3 join
+4 foreach
+5 Rest Parameter Function
+6 Push & Pop Operation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
