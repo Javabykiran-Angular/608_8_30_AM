@@ -1,0 +1,61 @@
+Last Lecture
+1 Array basics
+	let a1:number[]=[2,3,6];
+	let a2:string[]=[];
+	let a3:any[]=[2.5,'sumit'];
+	let a4=['df','dgsdf']
+	
+	for(let i=0;i<a1.length;i++){
+	....
+	}
+	console.log(a1);
+	
+		console.log(a1.join(' '));
+	
+2 Array Methods
+3 join
+4 foreach
+
+	a1.foreach((myvalue,i,arr)=>{
+		.....
+	})
+
+5 Rest Parameter Function
+	
+	function display(a:string,...item:number[]){
+	.....
+	}
+	
+	display(10,22,33)
+		
+	
+6 Push & Pop Operation
+	- LIFO 
+	- we can't add data on particular index 
+	let a1:number[]=[];
+	a1.push(45)
+	console.log(a1)
+	a1.push(45,78,89,56)
+	console.log(a1)
+	let res=a1.pop()
+
+Today Lecture
+1 Splice method
+2 slice method
+3 json Object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
