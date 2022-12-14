@@ -1,0 +1,49 @@
+Last Lecture
+1 Splice method
+	- particular location data will addedd or remove
+	let a:number[]=[10,20,30]
+	a.splice(2,0,78)
+	a.splice(2,0,78,99)
+	a.splice(2,1)
+	a.splice(2,1,100)
+	a.splice(2,1,100,36)
+2 slice method
+	let temp=a.slice(2,9)
+3 json Object
+	let jsonobj={
+		id:45,
+		"fname":'Sumit',
+		lname:'....'
+	}
+	
+	1 using dot operator
+	2 square operator
+	
+	jsonobj.id 
+	jsonobj.fname
+	
+	jsonobj["id"]
+	jsonobj['fname']
+
+Today Lecture
+1 Array Of Object
+2 Addition features of typescript
+	1 class
+	2 object,property,method
+	3 constructor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
