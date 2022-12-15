@@ -1,0 +1,101 @@
+Last Lecture
+1 Array Of Object
+	let arr=[
+		{
+			id:9,
+			fname:'Sumit',
+			lname:'Raokhande',
+			country:{
+				cid:1,
+				cname:'india'
+			},
+			month:[...],
+			result:[
+				{
+					subj:'M1',
+					marks:40
+				},
+				{
+					subj:'M1',
+					marks:40
+				},
+				{
+					subj:'M1',
+					marks:40
+				}
+			]
+		},
+		{
+			id:9,
+			fname:'Sumit',
+			lname:'Raokhande'
+		},
+		{
+			id:9,
+			fname:'Sumit',
+			lname:'Raokhande'
+		}
+	]
+	
+	for(let i=0;i<arr.length;i++){
+		console.log(`
+			id  :: ${arr[i].id}
+			country :: ${arr[i].country.cname}
+			month :: ${arr[i].month.join()}
+		`)
+		
+		
+		for(let j=0;j<arr[i].result.length;j++){
+			arr[i].result[j].subj
+		}
+		
+	}
+2 Addition features of typescript
+	1 class
+		
+		class Myclass{
+			id:number;
+			fname:string;
+			...
+			constructor(id:number,....){
+				this.id=id;
+				...
+			}
+			
+			display(){
+				console.log(`
+					id :: ${this.id}
+				`)
+			}
+			
+		}
+		
+		let obj=new Myclass();
+		
+		obj.display();
+		
+	2 object,property,method
+	3 constructor
+
+Today Lecture
+1 Access Specifier
+2 Access in same package
+3 Access in different package
+4 inheritance
+5 method overriding
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
