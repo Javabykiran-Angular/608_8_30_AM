@@ -1,0 +1,88 @@
+Last Lecture
+1 Access Specifier
+	1 public
+	2 private
+	3 protected
+		private id:number;
+		
+2 Access in same package
+	demo1.ts
+	export class Myclass{
+	
+	}
+	
+	export function add(a:number,b:number){
+		return (a+b);
+	}
+	
+	export const pi=3.14;
+	
+	// let obj=new Myclass();
+	// ...
+	
+	demo2.ts
+	import {Myclass,add,pi} from './demo1';
+	
+	let obj=new Myclass()
+	obj.display();
+	....
+	
+3 Access in different package
+	myfolder
+	demo3.ts
+	import {Myclass} from '../day11/demo1';
+	....
+4 inheritance
+	single,multilevel,hireachical
+5 method overriding
+
+	export class Shape{
+		Myarea(){
+		...
+		}
+	}
+	
+	export class Circle extends Shape{
+		radius:number;
+		area:number
+		
+		constructor(r:number){
+			super();
+			this.radius=r;
+			this.area=0;
+		}
+		
+		override Myarea(){
+			this.area=t3.14*this.radius*this.rda
+			
+		}
+		
+		display(){
+		....
+		}
+	}
+	
+	main.ts
+	import {Circle} from './circle';
+	
+	....
+
+Today Lecture
+1 Interface 
+2 composition/aggregation/contentment/has a relationship
+3 Angular Setup 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
