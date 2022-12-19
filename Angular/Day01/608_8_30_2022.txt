@@ -1,0 +1,99 @@
+Last Lecture
+1 Interface 
+export class Employee{
+	...
+		fullname?:string;
+}
+
+export class EmployeeDetails implements Employee{
+	..
+		dept:Department;
+		
+		constructor(..,role:string){
+			...
+			this.dept=new Department(role)
+		}
+	..
+}
+
+let emp=new EmployeeDetails(...,'');
+emp.display();
+
+export class Department{
+	private role:string;
+	
+}
+
+2 composition/aggregation/contentment/has a relationship
+3 Angular Setup 
+
+Today Lecture
+1 Arch overview
+	- it is component orientated arch.
+	- component
+		1 view file=> html => only 1
+		2 stylesheet  => css => multiple
+		3 component file => .ts => only 1 
+		4 testing file => sepc.ts 
+	- metadata
+		- it gives extra information about component
+		@Component({
+			selector:...,
+			templateUrl:'',
+			StyleUrls:[ ]
+		})
+	- data binding
+		- data flow from component to view 
+		1 string interpolation
+		2 property Binding
+		3 Styel binding
+		4 class binding
+	- event binding
+		- data/request flow from view to component
+		- click,change,keyboard,mouseevent 
+	- directive
+		- to change the behaviour of ur element/structure 
+		- types of directive 
+			1 attribute
+			2 structural
+			3 component
+			4 event directive
+	- app Module
+		- only one root module 
+		- multiple module there 
+		1 declaration
+			- to register a component
+		2 import	
+			- we can import module 
+			
+		3 services
+			- it is simple class 
+			- we write BL logic 
+			- Use DI to implement service 
+			- provider key => to register the service
+		4 routing
+			- navigation from one component to another
+			- u can send data as well as 
+			
+	- Injector 
+		- to inject DI 
+		- u can inject inbiuld dependancy,custom inject 
+	
+2 Angular Application Flow  
+3 manually component creation 
+4 cli component creation 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
