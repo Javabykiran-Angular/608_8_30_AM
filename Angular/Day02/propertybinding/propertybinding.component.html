@@ -1,0 +1,20 @@
+<p>propertybinding works!</p>
+
+<!-- dynamically bind the property to any attribute
+    synatx=> [html attribute/directive/customattribute]="PropertyName"
+-->
+
+<input type="text" [value]="name" placeholder="Enter the name"> <br><br>
+<hr>
+<div hidden=" {{ishidden}} ">
+    Display text using String Interpolation 
+</div>
+
+<div [hidden]="ishidden">
+    Display text using Property Binding 
+</div> <br><br>
+
+<img class="imgclass" id="myid" 
+[src]="imgurl" alt="">
+
+

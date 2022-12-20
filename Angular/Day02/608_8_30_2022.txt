@@ -1,0 +1,96 @@
+Last Lecture
+1 Arch overview
+	- it is component orientated arch.
+	- component
+		1 view file=> html => only 1
+		2 stylesheet  => css => multiple
+		3 component file => .ts => only 1 
+		4 testing file => sepc.ts 
+	- metadata
+		- it gives extra information about component
+		@Component({
+			selector:...,
+			templateUrl:'',
+			StyleUrls:[ ]
+		})
+	- data binding
+		- data flow from component to view 
+		1 string interpolation
+		2 property Binding
+		3 Styel binding
+		4 class binding
+	- event binding
+		- data/request flow from view to component
+		- click,change,keyboard,mouseevent 
+	- directive
+		- to change the behaviour of ur element/structure 
+		- types of directive 
+			1 attribute
+			2 structural
+			3 component
+			4 event directive
+	- app Module
+		- only one root module 
+		- multiple module there 
+		1 declaration
+			- to register a component
+		2 import	
+			- we can import module 
+			
+		3 services
+			- it is simple class 
+			- we write BL logic 
+			- Use DI to implement service 
+			- provider key => to register the service
+		4 routing
+			- navigation from one component to another
+			- u can send data as well as 
+			
+	- Injector 
+		- to inject DI 
+		- u can inject inbiuld dependancy,custom inject 
+	
+2 Angular Application Flow  
+	
+3 manually component creation 
+	html,css,ts 
+	employee.component.html
+	employee.component.css 
+	employee.component.ts 
+	
+	@Component({
+		selector:'app-employee',
+		templeUrls:'./employee.component.html'
+		StyleUrls:['./employee.component.css']
+	})
+	export class EmployeeComponent{
+	
+	}
+	
+	app.component.html
+	<app-employee>
+	
+4 cli component creation
+	ng g c student
+5 onInInit
+
+Today Lecture
+1 Data binding 
+	- data send from component to view file 
+2 String interpolation
+3 Property binding
+4 StringInterpolation Vs Property Binding
+
+
+
+
+
+
+
+
+
+
+
+
+
+

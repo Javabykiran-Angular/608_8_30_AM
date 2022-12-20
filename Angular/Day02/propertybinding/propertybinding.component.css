@@ -1,0 +1,8 @@
+.imgclass{
+    width: 250px;
+    height: 250px;
+}
+
+#myid{
+    border: 5px dotted green;
+}
