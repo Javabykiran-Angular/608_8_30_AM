@@ -1,0 +1,51 @@
+Last Lecture
+1 Data binding 
+	- data send from component to view file 
+2 String interpolation
+	<h2> {{name}} <h2>
+	<h2> {{'Welcome '+name}} <h2>
+	<img src=" {{imgUrl}} "
+	
+	<h2> {{num1+num1}} 
+	
+	.ts file
+	name:string='Sumit'
+	imgUrl:string='../../assets/bg2.jpg';
+	num1:number=2;
+3 Property binding
+	<input [value]="name">
+	<img [src]="imgUrl">
+	
+	
+	.ts file
+	name:string='...';
+	imgUrl='...'
+	
+4 StringInterpolation Vs Property Binding
+	<div hidden="{{isHidden}}">
+	......
+	
+	
+	<div [hidden]="isHidden">
+	.....
+	
+	.ts file
+	isHidden:boolean=false;
+
+Today Lecture
+1 Style Binding
+2 class Binding
+
+
+
+
+
+
+
+
+
+
+
+
+
+
