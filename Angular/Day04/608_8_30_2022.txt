@@ -1,0 +1,58 @@
+Last Lecture
+1 Style Binding
+	<h2 [style.color]="mycolor" > ...
+	<h2 [style.color]="rating<4?'red':'green'" >
+	
+	<div [ngStyle]="jsonobj">.....
+	
+	
+	.ts file
+	
+	mycolor:string='red';
+	rating:number=2;
+	jsonobj={
+		color:'red',
+		fontSize:'32px',
+		'font-family':...
+	}
+	
+2 class Binding
+	success,danger,warning,special
+	
+	<h2 [class]="myclass">gfjh
+	<h2 [class.danger]="rating<4"
+		[class.warning]="rating>4"
+	>gfjh
+	
+	<div [ngClass]="jsonobj">hjfsdf
+	
+	
+	.ts file 
+	myclass:string='success';
+	jsonobj={
+		'success':!this.isError,
+		'danger' : this.isError,
+		'special': this.isSpecial
+	}
+	
+
+Today Lecture
+1 event binding
+2 click event 
+3 $event 
+4 template refernce variable
+5 Real time example
+
+
+
+
+
+
+
+
+
+
+
+
+
+

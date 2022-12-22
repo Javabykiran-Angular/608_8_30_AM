@@ -1,0 +1,36 @@
+<p>eventbinding works!</p>
+
+<!-- syntax 
+        (eventname)="eventhandler()"
+-->
+
+<!-- <button (click)="onClick()" >Click</button> <br><br>
+<img src="../../assets/bg2.jpg" alt="" (click)="onImage()"><br><br> -->
+
+<!-- $event 
+    - It is special variable given by angular 
+    - it gives current dom element information
+    - u can apply any html tag/selector
+    - u can't manipulate a data/behaviour 
+-->
+<!-- <button value="Doller event occur.." (click)="onDoller($event)" >Doller Event</button> -->
+
+<!-- template ref variable
+    - it gives dom information
+    - it holds a handle/object of html element
+    - u can manipulate the data/behaviour 
+    - u can apply any html tag
+
+-->
+
+<!-- <input #inputname type="text" placeholder="Enter the name"> <br><br>
+<button (click)="onSend(inputname)" >Send</button> <br><br>
+
+<input #inputname1 type="text" placeholder="Enter the name"> <br><br>
+<button (click)="onSend1(inputname1.value)" >Send</button> -->
+
+
+<input #num1 type="text" placeholder="Enter the number1"><br><br>
+<input #num2 type="text" placeholder="Enter the number2"><br><br>
+<button (click)="onAddition(num1.value,num2.value)">Addition</button><br><br>
+<input [value]="result" type="text" placeholder="Result">
