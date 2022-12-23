@@ -1,0 +1,26 @@
+<p>eventbinding1 works!</p>
+<!-- 
+<input #inputname type="text" (change)="onChange(inputname)"
+placeholder="Enter the name "> <br><br>
+
+<input type="text" (keyup)="onKeyUp()"
+placeholder="key up event"> <br><br>
+<input type="text" (keydown)="onKeyDown()"
+placeholder="key down event">
+ -->
+
+ <!-- event binding without event handler -->
+ <!-- <button (click)="result=8+8">Addition</button>
+ <h2> {{result}} </h2> -->
+
+
+<!-- ngModel
+    - it is attribute directive
+    - FormsModule import app.module.ts 
+    - u can use any html tag 
+    - [()] - banana in the box notation 
+    - [(ngModel)]="propertyname"
+-->
+
+<input type="text" placeholder="Enter the name" [(ngModel)]="name" >
+{{name}}

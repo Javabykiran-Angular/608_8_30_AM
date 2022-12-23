@@ -1,0 +1,78 @@
+Last Lecture
+1 event binding
+	- data flow from view to component
+2 click event 
+	<button (click)="onClick()">..
+	<img (click)="onImage()">
+	
+	.ts file
+	count:number=0;
+	onClick(){
+	if(this.count==0){
+	...
+		this.count++;
+	}
+	...
+	}
+3 $event 
+	- it gives current dom element information
+	<button (click)="onClick($event)">
+	
+	
+	.ts file
+	onClick(myevent:any){
+	.....
+	myevent.target.value
+	}
+4 template refernce variable
+	
+	<input #inputname >
+	<button (click)="onClick(inputname)">
+	
+	.ts
+	onClick(myname:any){
+		myname.style.background='green';
+		myname.value 
+	}
+		
+5 Real time example
+	<input #num1>
+	<input #num2>
+	<button (click)="onAddition(num1.value,num2.value)"
+	<input [value]="result">
+	.ts
+	onAddition(num1:any,num2:any){
+		let n1=+num1;
+		...
+		this.result=n1+n1;
+	}
+
+Today Lecture
+1 change event 
+2 keyboard event
+	1 keyup
+	2 keydown
+3 event binding without event handler
+4 two way binding
+5 Structural directive
+	- it update ur dom structure dynamically
+	1 *ngIf => on basis of condition 
+	2 *ngFor => itrate dynamically
+	3 *ngSwitch => to excute a soecific condition 
+6 if directive 
+7 component directive
+	<ng-template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
