@@ -1,0 +1,66 @@
+Last Lecture
+1 change event 
+	<input #inputname (change)="onChange(inputname)">
+	
+	.ts file
+	
+	onChange(myname:any){
+		....
+		....
+	}
+2 keyboard event
+	1 keyup
+		<input (keyup)="onKeyup()">
+		.ts file
+		onKeyup(){
+		....
+		}
+	2 keydown
+	<input (keydown)="onKeydown()">
+		.ts file
+		onKeydown(){
+		....
+		}
+3 event binding without event handler
+	<button (click)="result=8+8">
+	{{result}}
+4 two way binding
+	- ngModel
+	- FormsModule
+	<input [(ngModel)]="name">
+	{{name}}
+5 Structural directive
+	- it update ur dom structure dynamically
+	1 *ngIf => on basis of condition 
+	2 *ngFor => iterate dynamically
+	3 *ngSwitch => to excute a specific condition 
+6 if directive 
+	<div *ngIf="rating<4;else myelsepart">
+		<h2> ....
+	</div>
+	
+	<ng-template #myelsepart>
+		<h2>....
+	</ng-template>
+7 component directive
+	<ng-template>
+	
+Today Lecture
+1 for directive
+2 mouse event
+	1 mouseover
+	2 mouseout
+
+
+
+
+
+
+
+
+
+
+
+
+
+
