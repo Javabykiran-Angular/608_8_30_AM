@@ -1,0 +1,74 @@
+Last Lecture
+1 for directive
+	.ts file
+	course:string[]=[...];
+	arrptoduct:any[]=[
+		{
+			...
+		},
+		{
+		
+		}
+	];
+	.html
+		<ul>
+		<li *ngFor="let item of course;index as i"> {{i+1}} {{item}}</li>
+		</ui>
+		
+		<table> 
+			<thead>
+				<th>
+				....
+			</thead>
+			<tbody>
+				<tr *ngFor="let item of arrptoduct;index as i"
+					(
+					
+					mouseover)="onmouseOver(item)"
+					(mouseout)="onMouseout()"
+					[ngClass]="{
+						'highlight':selected===item.name
+					}"
+				>
+					<td>{{i+1}}</td>
+					<td> {{item.name}}</td>
+					<td> {{item.price}}</td>
+					<td> {{item.qty}}</td>
+				</tr>
+					
+		
+		
+		.ts file
+		selected:string='';
+		onmouseOver(item:any){
+		this.selected=item.name;
+		}
+		
+		onMouseout(){
+			this.selected='';
+		}
+		.css
+		.highlight{
+		....
+		}
+		
+2 mouse event
+	1 mouseover
+	2 mouseout<ng-template>
+	
+Today Lecture
+1 Switch Directive
+
+
+
+
+
+
+
+
+
+
+
+
+
+

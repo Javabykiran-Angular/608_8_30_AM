@@ -1,0 +1,14 @@
+div{
+    width: 350px;
+    height: 250px;
+}
+
+.blackcolor{
+    background: black;
+    color: white;
+}
+
+.orangecolor{
+    background: orange;
+    color: black;
+}
