@@ -1,0 +1,49 @@
+Last Lecture
+1 Switch Directive
+	<input #inputcolor>
+	<button (click)="onSend(inputcolor.value)">
+	
+	<div [ngSwitch]="choice">
+		<div *ngSwitchCase="'red'"
+			[style.background]="choice"
+			> You color name is {{choice}}</div>
+		<div *ngSwitchCase="'green'"> You color name is {{choice}}</div>
+		<div *ngSwitchCase="'blue'"> You color name is {{choice}}</div>
+		<div *ngSwitchDefault
+				[ngStyle]="{
+					'background':choice==''?'black':'orange',
+					'color':choice==''?'white':'black'
+				}"
+			> You color name is wrong {{choice}}</div>
+	</div>
+	
+	.ts
+	choice:string='';
+	onSend(colorname:string){
+		this.choice=colorname.toLowerCase().trim();
+	}
+
+Today Lecture
+1 Component interaction
+	- to send data(string/numbre/array/json obj/array of object/any) from one component to another component
+	- parent-child relation establish
+2 @Input()
+	- to send data from parent to child 
+	- property level decorator
+3 @Output()
+	- to send data from child to parent
+	- property level decorator
+
+
+
+
+
+
+
+
+
+
+
+
+
+
