@@ -1,0 +1,78 @@
+Last Lecture
+1 Component interaction
+	- to send data(string/numbre/array/json obj/array of object/any) from one component to another component
+	- parent-child relation establish
+	app component.html
+	<app-parent>
+	
+	parent .ts
+		strdata:string='...'
+		jsonobj={
+		
+		}
+	
+	parent.html 
+	<app-child1 [ParentStrData]="strdata" 
+		[ParentJsonData]="jsonobj">
+	
+	child1.ts
+	@Input() ParentStrData:string='';
+	@Input()ParentJsonData:any={};
+	
+	child1.html 
+	{{ParentStrData}}
+	
+	{{ParentJsonData.id}}
+	
+	
+2 @Input()
+	- to send data from parent to child 
+	- property level decorator
+3 @Output()
+	- to send data from child to parent
+	- property level decorator
+	
+	child2.html
+	<button (click)="onSend()" >Send
+	
+	child2.ts
+	
+		@Output() ChildStrEvent=new EventEmitter();				
+		@Output() ChildArrObjEvent=new EventEmitter()
+		strdata:string="";
+		arrobj=[]
+	
+	onSend(){
+		this.ChildStrEvent.emit(this.strdata);
+		this.ChildArrObjEvent.emit(this.arrobj)
+	}
+	
+	parent.html
+	{{childstrreceived}}
+	
+	table 
+	.....
+	
+	<app-child2 (ChildStrEvent)="childstrreceived=$event"
+
+			(ChildArrObjEvent)="childarrreceived=$event">
+	
+
+Today Lecture
+1 Pipe => 
+	it transform ur data without changing its original value 
+2 inbuild pipe
+
+
+
+
+
+
+
+
+
+
+
+
+
+
