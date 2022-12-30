@@ -1,0 +1,48 @@
+Last Lecture
+1 Pipe => 
+	it transform ur data without changing its original value 
+2 inbuild pipe
+	{{strdata | lowercase}}
+	{{strdata | uppercase}}
+	{{strdata | titlecase}}
+	{{strdata | slice:0:20}}
+	
+	{{0.25| percent}}
+	{{0.025| percent:'1.1'}}
+	{{0.025| percent:'2.2'}}
+	
+	{{0.25 | currency:'INR':'code'}}
+	
+	{{5.6785569|number:'1.2-3'}}
+	{{5.6785569|number:'2.2-3'}}
+	
+	{{mydate | date : 'lonDate'}}
+	{{mydate | date : 'dd-MM-yyyy'}}
+	{{mydate | date : 'lonDate'|uppercase}}
+	
+	{{mydate | date : 'hh:mm:ss'}}
+	
+	.ts
+	mydate=new Date();
+
+Today Lecture
+1 Custom Pipe 
+2 PipeTransform
+	it is interface
+3 transform method
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
