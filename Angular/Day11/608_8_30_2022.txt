@@ -1,0 +1,66 @@
+Last Lecture
+1 Custom Pipe 
+
+	summary.pipe.ts
+		
+	@Pipe({
+		name:'summary'
+	})
+	export class SummaryPipe implemnets PipeTransform{
+		transform(value:any,start:numbe=0,end:number=20){
+				let temp=(<string> value);
+				
+				return (temp.substring(start,end)+"...")
+				
+		}
+	}
+	
+	app.module.ts
+	declaration : [
+		SummaryPipe
+	]
+	
+	.html 
+	<h2> {{strdetails | summary:0:50}}
+	<h2> {{strdetails | summary}}
+	
+
+2 PipeTransform
+	it is interface
+3 transform method
+
+Today Lecture
+1 Services
+	- Service is class 
+	- u hv any Business logic 
+	- code maintaintabilty
+	- code resusalbility
+	- it provide isolation to ur component from ur backend server 
+	- to connect ur backend server 
+	
+2 Dependancy Injection
+3 http Protocol
+	- set of rule 
+	- connectionless protocol/stateless protocol
+4 http Method
+	1 get => fetch a data from backend server 
+	2 post => insert/ send data from frontend/client to backend server
+	3 put => update a particular data from backend 
+	4 delete => delete a particular data from backend 
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
