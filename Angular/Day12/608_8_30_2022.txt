@@ -1,0 +1,74 @@
+Last Lecture
+1Services
+	- Service is class 
+	- u hv any Business logic 
+	- code maintaintabilty
+	- code resusalbility
+	- it provide isolation to ur component from ur backend server 
+	- to connect ur backend server 
+	
+	export class CourseService{
+		private course:string[]=[];
+		
+		getCourse(){
+			return this.course;
+		}
+	}
+	
+	
+	course.ts
+		
+		constructor(private service:CourseService){
+		//	let service=new CourseService();
+			
+			//this.mycourse=service.getCourse();
+		}
+		
+		ngOninit(){
+			this.mycourse=service.getCourse();
+		}
+	
+	app.module.ts 
+	privider:[CourseService]
+	
+2 Dependancy Injection
+3 http Protocol
+	- set of rule 
+	- connectionless protocol/stateless protocol
+		
+4 http Method
+	1 get => fetch a data from backend server 
+	2 post => insert/ send data from frontend/client to backend server
+	3 put => update a particular data from backend 
+	4 delete => delete a particular data from backend 
+	
+
+
+Today Lecture
+1 Backend Url 
+	http://jsonplaceholder.typicode.com/posts
+	
+	
+	http://localhost:8080/post 
+	
+	- fake service 
+	- if u send any data (post,put,delete,get),data will not added in db but it gives a response of ur request 
+2 @Injectable
+3 Observable
+4 get request
+5 HttpClientModule
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
