@@ -1,0 +1,94 @@
+Last Lecture
+1 Backend Url 
+	http://jsonplaceholder.typicode.com/posts
+	
+	
+	http://localhost:8080/post 
+	
+	- fake service 
+	- if u send any data (post,put,delete,get),data will not added in db but it gives a response of ur request 
+	
+	ng g s http 
+	@Injectable({
+	provideIn:"root"
+	})
+	export class httpService{
+		private url:string='http://jsonplaceholder.typicode.com/posts';
+		
+		constructor(private http:HttpClient){
+		
+		}
+		
+		getPost(){
+			return (this.http.get(this.url))
+		}
+		
+		PostData(obj:any){
+			return (this.http.post(this.url,obj))
+		}
+		
+		
+	}
+	
+	post.ts
+	posts:any[]=[];
+	constructor(private service:httpService){}
+	
+	ngOninit(){
+		this.Getpost()
+	}
+	Getpost(){
+		this.service.getPost()
+		.subscribe((response:any)=>{
+			this.posts=response;
+		})
+	}
+	
+	post.html 
+	<input #inputtitle >
+	<input #inputbody >
+	<button (click)="onSend(inputtitle.value,inputbody.value)"> Send
+	
+	post.ts
+	onSend(mytitle:any,mybody:any){
+		let obj={
+			title:mytitle,
+			body:mybody
+		}
+		
+		this.service.PostData(obj)
+		.subscribe((response)=>{
+			console.log(response)
+		})
+	}
+	
+	app.module.ts
+	
+	
+	HttpClientModule 
+	
+2 @Injectable
+3 Observable
+4 get request
+5 HttpClientModule
+6 post 
+
+Today Lecture
+1 put 
+2 delete 
+3 error
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
