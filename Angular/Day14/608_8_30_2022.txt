@@ -1,0 +1,84 @@
+Last Lecture
+1 put 
+	httpservice.ts
+	UpdateData(obj:any){
+		return (this.http.put(`${this.url}/${obj.id}`,obj))
+	}
+	
+	post.html
+	<div [hidden]="ishidden">
+	<input [(ngModel)]="id" readonly>
+	<input [(ngModel)]="title" readonly>
+	<input [(ngModel)]="body" readonly>
+	<button (click)="onUpdate()">Update
+	<div>
+	post.ts
+	ishidden:boolean=true;
+	onEdit(post:any){
+		this.id=post.id;
+		....
+		this.ishidden=false
+	}
+	
+	onUpdate(){
+		let obj={
+			id:this.id,
+			title:this.title,
+			body:this.body
+		}
+		
+		this.service.UpdateData(obj)
+		.subscribe((response)=>{
+			....
+			this.id=0;
+			...
+			this.ishidden=true;
+		},(myerror)=>{
+			alert("....")
+		})
+	}
+	
+	onDelete(id:any){
+		this.service.deletedata(id)
+		.subscribe((response)=>{}
+		.....
+		)
+	}
+	
+	
+	service.ts
+	deletedata(id:any){
+		return (this.http.delete(`${this.url}/${id}`))
+	}
+2 delete 
+	<button (click)="onDelete(post.id)" >delete
+3 error
+
+Today Lecture
+1 Routing
+	- navigation from one component to another componet
+	
+2 Routing Steps
+	1 configure the route
+	2 <router-outlet>
+		it is component directive
+	3 establish the link/navigate between the component
+3 routerLink
+	- it is attribute directive
+4 Empty path
+5 Wild cart operator
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
