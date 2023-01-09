@@ -1,0 +1,107 @@
+Last Lecture
+1 send Query parameter 
+	home.ts
+	json={
+		id:9,
+		fname:'Sumit'
+	}
+	
+	home.html
+	<a routerLink="/Queryparam" [queryParams]="json">
+	
+	queryParams.ts
+	myjson:any={};
+	constructor(private route:ActivatatedRoute){}
+	
+	Getdata(){
+		this.route.QueryParamMap
+		.subscribe((param:any)=>{
+			this.myjson.id=+param.get("id")
+			...
+		})
+	}
+	
+2 Dynamic routing
+	navigate method => @angular/router 
+	
+	home.html
+	<button (click)="onPage1()">
+	
+	home.ts
+	
+	constructor(private router:Router)
+	
+	onPage1(){
+		this.router.navigate(['/Page1']);
+	}
+	
+	onPage2(){
+		this.router.navigate(['/Page2',this.myid,this.myusername]);
+	}
+	
+	onqueryparameter(){
+		this.router.navigate(['/queryparam'],{
+			queryParams:this.myjson
+		});
+	}
+ Observable Vs promises 
+3 Lazy loading
+	
+4 create custom module/feature module
+	ng g m user --routing 
+	ng g c listeuser
+	ng g c updateuser
+	ng g c deleteuser
+	
+	user-routing.ts
+	[
+		{
+			path:"",component:ListUser
+		},
+		{
+			path:"update",component:updateUser
+		}
+	]
+	
+	app-routing.ts
+	[
+		{
+			path:"user",loadchilder:()=>import('./user/user.module').then(m=>m.userModule)
+		}
+	]
+	
+	home.html
+	<a routerLink=="/user">
+	
+5 create custom routing file 
+
+Today Lecture
+1 Bootstrap overview
+	- It is css freamwork
+	- make ur application attractive
+	- template code is given of css 
+	- it make ur application responsive 
+2 Integration of bootstrap
+	1 online
+		use cdn link
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+		add in index.htm;l file 
+		<head> 
+	2 offline 
+		
+3 Basic grid system
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
