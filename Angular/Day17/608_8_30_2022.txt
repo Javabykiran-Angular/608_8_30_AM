@@ -1,0 +1,77 @@
+Last Lecture
+1 Bootstrap overview
+	- It is css freamwork
+	- make ur application attractive
+	- template code is given of css 
+	- it make ur application responsive 
+2 Integration of bootstrap
+	1 online
+		use cdn link
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+		
+		add in index.html file 
+		<head> 
+	2 offline 
+		npm install --save bootstrap@4.6
+		
+		style.css
+		@import '~bootstrap/dist/css/bootstrap.css';
+		
+3 Basic grid system
+	col,so-sm,col-md,col-lg 
+	<div class="container">
+	<div class="row">
+		<div class="col-2 col-sm-4 col-md-6 col-lg-8">
+			<table class="table table-dark ">
+			....
+		</div>
+		<div class="col-2 col-sm-4 col-md-6 col-lg-8">
+			<div class="form-group">
+				<lable>...
+				<input class="form-control">
+				....
+				<button class="btn btn-success">
+			</div>
+		</div>
+	</div>
+
+Today Lecture
+1 Template Driven Form
+	- login,signup,f/b form 
+	- all validation is done on html file 
+	
+2 FormControl
+	- It is class 
+	
+	1 valid => true
+	2 invalid => true/false 
+	3 touched => true 
+	4 pristine => true
+	5 dirty  => true 
+	6 errors  => Object => true/false 
+	
+	steps
+	1 to create FormControl instance 
+		we have to use ngModel without notation => It holds FormControl instance & u have use name html attribute 
+	2 create a template ref variable & assign ngModel to template ref variable 
+	3 for the validation we use errors property then u have use required attribute (html)
+	
+	
+	
+	
+3 ngForm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
