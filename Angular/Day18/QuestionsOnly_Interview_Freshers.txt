@@ -1,0 +1,62 @@
+1. Why were client-side frameworks like Angular introduced?
+2. How does an Angular application work/Application Flow?
+3. What are some of the advantages of Angular over other frameworks?
+4. List out differences between AngularJS(MVC) and Angular(MVV/MVW)
+
+AOT-Ahead of compiler (self Explore)
+Difference Between AOT & JIT (self Explore)
+
+
+
+5 what is difference between property binding vs string interpolation
+[] vs {{}}
+6 how data flows in propety/string Interpolation/style/class binding
+7 how data flows in event binding
+8 which event you are using in your project
+click,change,mouseover/mouseout,focus
+keyup,keydown,custom event-component intraction
+9 what is component interation?
+10 how we achieve to send data?
+	how we can pass event to one component to another.(L&T)
+11 what is mean by service & use/role 
+12 have you used Http services/consume API in Angular?
+13 which module you are imported for Http services?
+14 what is use of @injectable?
+15 What is mean By DI & how we can achieve DI
+16 what is use of observable?
+17 For Observable which lib is used?
+18 What is mean by routing? what is use of router-outlet tag?
+19 Have you use custom Pipe? How we can implement custom pipe?
+20 Can you enlist inbuild pipe?
+21 What is Two way Binding & what is preqreuesting for two way binding to implement?
+22 Can we send data from one component to another component? how we can Achieve it? (FIS Global )
+
+
+23 Diff between == and === (FIS Global )
+24 How to connect to backend-- steps (FIS Global )
+25 how can pass whole data two components with out using component interaction (Virtusa company )
+26 Types of Directive (Virtusa company )
+27 data binding types (Virtusa company)
+28 How to create component (Mindtree)
+29 What is data binding and what are the different techniques of data binding (Mindtree)
+
+
+
+Company => IRIS,onword
+1.Pipe
+2.Services
+3.Advantages of angular
+4.What is component
+5.How to send data from one com to another com
+6.what is observable 
+9.what is module
+10.custom pipe
+11.pipe transform
+12. Transform method
+13.can we create multiple custom module
+14.diff btw observable andd promise
+15.structure and attribute directive
+16.what is component declaration block
+
+
+

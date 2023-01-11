@@ -1,0 +1,118 @@
+<p>demotdf works!</p>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col">
+
+                <form #f="ngForm" (ngSubmit)="onSumit(f)" >
+
+                    {{f.value | json}}
+
+                <div class="form-group">
+                        <label for="">Username::</label>
+                        <input type="text" class="form-control"
+                        ngModel name="myusername" minlength="5" 
+                        pattern="admin"
+                        #username="ngModel" required
+                        placeholder="Enter the Username">
+
+                        <div class="alert alert-danger" 
+                        *ngIf="username.touched && !username.valid ">** Please Enter the Username 
+
+                            <div *ngIf="username.errors?.minlength">** Please enter minimum length {{username.errors?.minlength?.requiredLength}} 
+                            </div>
+
+                            <div *ngIf="username.errors?.pattern">** Please Enter the Appropriate pattern 
+
+                            </div>
+
+                        </div>
+
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="">Comment::</label>
+                    <textarea  
+                    ngModel name="comment" #comment="ngModel" required
+                    placeholder="Enter the comment" class="form-control"
+                     cols="30" rows="10"></textarea>
+
+                     <div class="alert alert-danger" 
+                     *ngIf="comment.touched && comment.invalid">
+                        ** Please enter the comment 
+                     </div>
+
+                </div>
+
+                <div class="checkbox">
+                    <label for="check1">
+                      <input type="checkbox" id="check1"
+                      ngModel name="issubscribed"  
+                      #mail="ngModel" required> I Agree All the Terms & Conditions.
+                    </label>                            
+                </div>
+
+                <div class="radio">
+                    <label for="con0">
+                      <input ngModel #contact="ngModel" 
+                      type="radio" name="con" 
+                      id="con0" value="email" required > Email
+                    </label>
+
+                  </div>
+          
+                <div class="radio">
+                    <label for="con1">
+                      <input ngModel #contact="ngModel" 
+                      type="radio" name="con" 
+                      id="con1" value="phone" required > Phone
+                    </label> 
+                  </div>
+
+                  <div class="form-group">
+                    <label for="country">Country</label>
+                    <select ngModel name="country" 
+                    id="country" class="form-control"  required>
+          
+                     <!-- <option *ngFor="let item of country" 
+                     [value]="item.cid">{{item.name}} </option>   -->
+  
+                     <option *ngFor="let item of country" 
+                     [ngValue]="item">{{item.name}} </option>
+          
+                    </select> 
+                  </div>
+
+                  <div class="form-group">
+                    <label for="myemail">Email Id</label>
+                    <input ngModel #email="ngModel" type="email" name="email" 
+                     id="myemail" class="form-control"                     
+                    placeholder="Enter the Email ID...."                 
+                    [pattern]="EMAIL_PATTERN"
+                    required>                  
+                    <div class="alert alert-danger" 
+                    *ngIf="email.touched && !email.valid " >Please Enter the Email ID                      
+                        <div *ngIf="email.errors?.pattern">
+                            ** Please Enter the Appropriate Email ID
+                        </div>
+          
+                    </div>
+                </div>
+
+                <br>
+
+                <button class="btn btn-outline-success"
+                        [disabled]="!f.valid"
+                >Submit</button>
+
+            </form>
+            <br><br><br><br>
+
+
+        </div>
+
+    </div>
+</div>
